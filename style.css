@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+}
+
+.Music {
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: linear-gradient(to right top, #58aec3, #ccdde4);
+  padding: 15px;
+  margin-top: 200px;
+  box-shadow: 10px 10px 5px 5px #888888;
+}
+
+.playMusic {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.Img {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 25px;
+
+}
+
+.Img.is-playing {
+  animation: spinner 4.5s infinite linear;
+}
+
+.Img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.music-name {
+  font-weight: 500;
+  text-align: center;
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  color: #666;
+  margin-bottom: 30px;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 0 20px;
+  font-size: 20px;
+}
+
+.range {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 3px;
+}
+
+.range ::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 3px;
+  background: #666;
+}
+
+.range ::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #58aec3;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-top: -8px;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
